@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+  import { Provider } from 'react-redux';
+import store from './EXP-16/store';
+import LifecycleExample from './EXP-1/s LifecycleExample';
+import CounterComponent from './EXP-16/counter';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <Provider store={store}>
+        <CounterComponent/>
+    </Provider> */}
+    <LifecycleExample/>
   </React.StrictMode>
 );
 
